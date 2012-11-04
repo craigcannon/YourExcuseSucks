@@ -19,7 +19,7 @@
 */
 
 /* --- Fonts ------------------------------------------------------------------ */
-@font-face {font-family: 'Conv_Knockout-26';src: url('../fonts/Knockout-26.eot');src: local('☺'), url('../fonts/Knockout-26.woff') format('woff'), url('../fonts/Knockout-26.ttf') format('truetype'), url('../fonts/Knockout-26.svg') format('svg');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'Conv_Knockout-26';src: url('../fonts/Knockout-26.eot');src: local('☺'), url('../fonts/Knockout-26.ttf') format('truetype'), url('../fonts/Knockout-26.svg') format('svg');font-weight: normal;font-style: normal;}
 
 
 /* --- CSS Reset -------------------------------------------------------------- */
@@ -89,8 +89,8 @@ i.icon {display: inline-block; font-style: normal;}
 /* --- Styling ---------------------------------------------------------------- */
 
 i.icon {background: url(../images/assets.png) 100px 100px no-repeat; text-indent: -9999px;}
-i.icon.logo {width: px; height: px; background-position: 0 0;}
-i.icon.logo_stamp {width: 100px; height: 100px; background-color: rgba(231,232,233,1);}
+/*i.icon.logo {width: px; height: px; background-position: 0 0;}*/
+i.icon.logo_stamp {width: 116px; height: 112px; background-position: 0 0;}
 
 h1 {padding: 0; margin: 0; font-size: 9.2em; line-height: 1.0em; color: rgba(0,116,150,1); text-transform: uppercase; letter-spacing: .02em; font-family: 'Conv_Knockout-26',Helvetica,Arial,sans-serif; font-weight: normal;}
 h2 {padding: 0; margin: 0; font-size: 1.6em; line-height: 1.0em; color: rgba(238,49,45,1); text-transform: uppercase; letter-spacing: .1em; font-family: 'proxima-nova',Helvetica,Arial,sans-serif; font-weight: 600;}
@@ -126,7 +126,9 @@ p {padding: 0 0 10px 0; margin: 0; color: rgba(88,88,90,1); font-size: 1.85em; l
 
 
 /* HiDPI tweaks */
-  /* ... TODO ... */
+@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  i.icon {background-image: url(../images/assets@2x.png); -webkit-background-size: auto 250px; -moz-background-size: auto 250px; background-size: auto 250px;}
+}
 
 
 /* --- Web Structure ---------------------------------------------------------- */
@@ -136,7 +138,7 @@ p {padding: 0 0 10px 0; margin: 0; color: rgba(88,88,90,1); font-size: 1.85em; l
 #topbar {height: 12px; margin: 0 0 25px 0;}
 #header {padding: 90px 0 85px 0; margin: 0 0 84px 0;}
 #header h1#logo {max-height: 166px;}
-#header #logo_stamp {bottom: -133px; left: 0; right: 0; margin: 0 auto; width: 100px; height: 100px;}
+#header #logo_stamp {bottom: -133px; left: 0; right: 0; margin: 0 auto; width: 116px; height: 112px;}
 #content {width: 640px; min-height: 600px; padding: 0 0 80px 0;}
 #sidebar {width: 240px;}
 #footer {min-height: 200px;}
