@@ -93,6 +93,7 @@ i.icon {background: url(../images/assets.png?2) 100px 100px no-repeat; text-inde
 i.icon.logo_stamp {width: 116px; height: 112px; background-position: 0 0;}
 i.icon.footer.cultivatedwit {width: 42px; height: 24px; background-position: 0 -136px;}
 i.icon.footer.fordfoundation {width: 160px; height: 24px; background-position: 0 -112px;}
+i.icon.facebook_share {width: 28px; height: 26px; background-position: -117px 0;}
 
 h1 {padding: 0; margin: 0; font-size: 9.2em; line-height: 1.0em; color: rgba(0,116,150,1); text-transform: uppercase; letter-spacing: .02em; font-family: 'Conv_Knockout-26',Helvetica,Arial,sans-serif; font-weight: normal;}
 h2 {padding: 0; margin: 0; font-size: 1.6em; line-height: 1.0em; color: rgba(238,49,45,1); text-transform: uppercase; letter-spacing: .1em; font-family: 'proxima-nova',Helvetica,Arial,sans-serif; font-weight: 600;}
@@ -119,8 +120,12 @@ p {padding: 0 0 10px 0; margin: 0; color: rgba(88,88,90,1); font-size: 1.85em; l
 #content .excuse .description {margin: 30px 0 10px 0;}
 
 .social_buttons ul {margin: 10px 0 0 0; padding: 0; list-style: none;}
-.social_buttons ul li {clear: none; float: left; padding: 0 0 0 30px;}
-.social_buttins ul li:first-child {padding: 0;}
+.social_buttons ul li {clear: none; float: left; padding: 0 0 0 35px;}
+.social_buttons ul li:first-child {padding: 0;}
+.social_buttons ul li a.facebook_share {font-size: 1.15em; display: inline-block; height: 26px; overflow: hidden; border: 1px solid rgba(204,204,204,1); border-radius: 4px; color: rgba(255,255,255,1); font-weight: bold; text-shadow: 0 1px 0 rgba(0,0,0,.15); background-color: rgba(60,90,151,1); background-image: none; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(70,100,161,1)), to(rgba(60,90,151,1))); background-image: -moz-linear-gradient(center bottom, rgb(70,100,161) 100%, rgb(60,90,151) 0%);}
+.social_buttons ul li a.facebook_share:hover, .social_buttons ul li a.facebook_share:focus {background-color: rgba(31,65,137,1); background-color: rgba(31,65,137,1); background-image: none; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(60,90,151,1)), to(rgba(31,65,137,1))); background-image: -moz-linear-gradient(center bottom, rgb(60,90,151) 100%, rgb(31,65,137) 0%);}
+.social_buttons ul li a.facebook_share i.icon {clear: none; float: left; border-right: 1px solid rgba(255,255,255,.24);}
+.social_buttons ul li a.facebook_share span {display: inline-block; padding: 5px 8px 0 10px; height: 100%; vertical-align: top; border-left: 1px solid rgba(0,0,0,.08);}
 
 #sidebar .box {padding: 0 0 20px 0;}
 #sidebar .box h3 {padding: 0 0 12px 0;}
@@ -174,6 +179,8 @@ p {padding: 0 0 10px 0; margin: 0; color: rgba(88,88,90,1); font-size: 1.85em; l
   #content .excuse .video iframe, #content .excuse .video embed, #content .excuse .video object {width: 100%; height: auto; min-height: 220px;}
   #content .excuse h2 {line-height: 1.33em;}
   #content .excuse h3 + h1 {padding-top: 5px;}
+  .social_buttons ul li a.facebook_share {font-size: 1.3em;}
+  .social_buttons ul li a.facebook_share span {padding-top: 6px;}
   #sidebar {padding: 20px 0; margin: 20px 0 0 0; border-top: 3px solid rgba(0,116,150,1);}
   #sidebar .box {padding: 0 0 10px 0;}
   #sidebar #sidebar_go_vote {padding: 0 0 10px 0;}
@@ -195,4 +202,6 @@ p {padding: 0 0 10px 0; margin: 0; color: rgba(88,88,90,1); font-size: 1.85em; l
   .container {padding: 0 15px;}
   #header {max-height: 82px;}
   #content .excuse .video iframe, #content .excuse .video embed, #content .excuse .video object {min-height: 320px;}
+  .social_buttons ul li a.facebook_share {font-size: 1.1em;}
+  .social_buttons ul li a.facebook_share span {padding-top: 5px;}
 }
