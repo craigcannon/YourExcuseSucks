@@ -18,6 +18,10 @@
 
 */
 
+/* --- Fonts ------------------------------------------------------------------ */
+@font-face {font-family: 'Conv_Knockout-26';src: url('../fonts/Knockout-26.eot');src: local('☺'), url('../fonts/Knockout-26.woff') format('woff'), url('../fonts/Knockout-26.ttf') format('truetype'), url('../fonts/Knockout-26.svg') format('svg');font-weight: normal;font-style: normal;}
+
+
 /* --- CSS Reset -------------------------------------------------------------- */
 html, body, header, hgroup, nav, article, section, details, aside, footer, figure, figcaption, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
 header, hgroup, nav, article, section, details, aside, footer {display: block;}
@@ -84,7 +88,7 @@ i.icon {background: url(../images/assets.png) 100px 100px no-repeat; text-indent
 i.icon.logo {width: px; height: px; background-position: 0 0;}
 i.icon.logo_stamp {width: 100px; height: 100px; background-color: rgba(231,232,233,1);}
 
-h1 {font-size: 4.2em; color: rgba(0,116,150,1); text-transform: uppercase; letter-spacing: -.05em;}
+h1 {font-size: 8.2em; color: rgba(0,116,150,1); text-transform: uppercase; letter-spacing: -.02em; font-family: 'Conv_Knockout-26',Helvetica,Arial,sans-serif; font-weight: normal;}
 h2 {font-size: 1.2em; color: rgba(238,49,45,1); text-transform: uppercase; letter-spacing: .2em;}
 p {color: rgba(88,88,90,1); font-size: 1.6em; line-height: 1.4em; font-family: Times,'Times New Roman',serif;}
 
@@ -95,6 +99,10 @@ p {color: rgba(88,88,90,1); font-size: 1.6em; line-height: 1.4em; font-family: T
 #content .excuse .video {margin: 10px 0;}
 #content .excuse .social_buttons {margin: 10px 0;}
 #content .excuse .description {margin: 10px 0;}
+
+.social_buttons ul {margin: 0; padding: 0; list-style: none;}
+.social_buttons ul li {clear: none; float: left; padding: 0 0 0 30px;}
+.social_buttins ul li:first-child {padding: 0;}
 
 #sidebar .box {padding: 0 0 20px 0;}
 #sidebar .box h2 {padding: 0 0 12px 0;}
