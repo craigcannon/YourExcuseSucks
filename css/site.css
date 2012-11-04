@@ -78,6 +78,10 @@ h6 {font-size: 1.6em;}
 .to {text-overflow: ellipsis; overflow-x: hidden; -ms-text-overflow: ellipsis;}
 .to.nw {white-space: nowrap; overflow-x: auto; overflow: hidden;}
 
+.red {color: rgba(238,49,45,1);}
+.white {color: rgba(255,255,255,1);}
+.blue {color: rgba(0,116,150,1);}
+
 i.icon {display: inline-block; font-style: normal;}
 
 
@@ -88,24 +92,35 @@ i.icon {background: url(../images/assets.png) 100px 100px no-repeat; text-indent
 i.icon.logo {width: px; height: px; background-position: 0 0;}
 i.icon.logo_stamp {width: 100px; height: 100px; background-color: rgba(231,232,233,1);}
 
-h1 {font-size: 8.2em; color: rgba(0,116,150,1); text-transform: uppercase; letter-spacing: .02em; font-family: 'Conv_Knockout-26',Helvetica,Arial,sans-serif; font-weight: normal;}
-h2 {font-size: 1.2em; color: rgba(238,49,45,1); text-transform: uppercase; letter-spacing: .2em;}
-p {color: rgba(88,88,90,1); font-size: 1.6em; line-height: 1.4em; font-family: Times,'Times New Roman',serif;}
+h1 {padding: 0; margin: 0; font-size: 9.2em; line-height: 1.0em; color: rgba(0,116,150,1); text-transform: uppercase; letter-spacing: .02em; font-family: 'Conv_Knockout-26',Helvetica,Arial,sans-serif; font-weight: normal;}
+h2 {padding: 0; margin: 0; font-size: 1.6em; line-height: 1.0em; color: rgba(238,49,45,1); text-transform: uppercase; letter-spacing: .1em; font-family: 'proxima-nova',Helvetica,Arial,sans-serif; font-weight: 600;}
+h3 {padding: 0; margin: 0; font-size: 1.4em; line-height: 1.0em; color: rgba(238,49,45,1); text-transform: uppercase; letter-spacing: .5em; font-family: 'proxima-nova',Helvetica,Arial,sans-serif; font-weight: 600;}
+h4, #content #excuses_list ol li {padding: 0; margin: 0; font-size: 8.8em; line-height: 1.0em; color: rgba(0,116,150,1); text-transform: uppercase; letter-spacing: .02em; font-family: 'Conv_Knockout-26',Helvetica,Arial,sans-serif; font-weight: normal;}
+p {padding: 0 0 10px 0; margin: 0; color: rgba(88,88,90,1); font-size: 1.85em; line-height: 1.75em; font-family: 'rooney-web', Times,'Times New Roman',serif;}
 
 #topbar {background: rgba(231,232,233,1);}
 #header {background: rgba(0,116,150,1);}
+#header h1#logo {padding: 0; text-align: center; font-size: 16.6em; color: rgba(255,255,255,1); line-height: 1.0em; vertical-align: top;}
+#header h1#logo a {color: rgba(255,255,255,1);}
+/*#header h1#logo a:hover, #header h1#logo a:focus {color: rgba(238,49,45,1);}*/
 
-#content .excuse {padding: 0 0 20px 0; margin: 0 0 20px 0; border-bottom: 3px solid rgba(0,116,150,1);}
+
+#content #excuses_list {margin: 0 0 30px 0;}
+#content #excuses_list ol {counter-reset: li; list-style: none; margin: 10px 0 0 0; padding: 0;}
+#content #excuses_list ol li {margin: 0 0 10px 0; font-size: 6.4em;}
+#content #excuses_list ol > li:before {content: counter(li); counter-increment: li; width: 55px; text-align: right; padding: 0 12px 0 0; color: rgba(238,49,45,1);}
+#content .excuse {padding: 30px 0 0 0; margin: 20px 0 0 0; border-top: 3px solid rgba(0,116,150,1);}
 #content .excuse .video {margin: 10px 0;}
-#content .excuse .social_buttons {margin: 10px 0;}
-#content .excuse .description {margin: 10px 0;}
+#content .excuse .social_buttons {margin: 20px 0 10px 0;}
+#content .excuse .description {margin: 30px 0 10px 0;}
 
-.social_buttons ul {margin: 0; padding: 0; list-style: none;}
+.social_buttons ul {margin: 10px 0 0 0; padding: 0; list-style: none;}
 .social_buttons ul li {clear: none; float: left; padding: 0 0 0 30px;}
 .social_buttins ul li:first-child {padding: 0;}
 
 #sidebar .box {padding: 0 0 20px 0;}
-#sidebar .box h2 {padding: 0 0 12px 0;}
+#sidebar .box h3 {padding: 0 0 12px 0;}
+#sidebar #sidebar_go_vote {padding: 0 0 35px 0;}
 
 #footer {background: rgba(88,88,90,1);}
 
@@ -120,12 +135,9 @@ p {color: rgba(88,88,90,1); font-size: 1.6em; line-height: 1.4em; font-family: T
 #wrapper {}
 #topbar {height: 12px; margin: 0 0 25px 0;}
 #header {padding: 90px 0 85px 0; margin: 0 0 84px 0;}
-#header h1#logo {max-height: 166px; overflow: hidden; text-align: center; font-size: 16.6em; color: rgba(255,255,255,1); line-height: 1.0em; vertical-align: top;}
-#header h1#logo a {color: rgba(255,255,255,1);}
-#header h1#logo a:hover, #header h1#logo a:focus {color: rgba(238,49,45,1);}
-#header h1#logo .red {color: rgba(238,49,45,1);}
-#header #logo_stamp {bottom: -152px; left: 0; right: 0; margin: 0 auto; width: 100px; height: 100px;}
-#content {width: 640px; min-height: 600px; padding: 0 0 30px 0;}
+#header h1#logo {max-height: 166px;}
+#header #logo_stamp {bottom: -133px; left: 0; right: 0; margin: 0 auto; width: 100px; height: 100px;}
+#content {width: 640px; min-height: 600px; padding: 0 0 80px 0;}
 #sidebar {width: 240px;}
 #footer {min-height: 200px;}
 

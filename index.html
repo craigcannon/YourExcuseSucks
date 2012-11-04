@@ -66,18 +66,31 @@
   <div id="content_area" class="c container">
    <section id="content" class="l">
 
+    <nav id="excuses_list">
+     <h3>The Excuses</h3>
+     <ol>
+      <li><a href="#">I dont’t have the time to vote.</a></li>
+      <li><a href="#">Voting is too complicated.</a></li>
+      <li><a href="#">My vote doesn't matter in my state.</a></li>
+      <li><a href="#">My not voting is a vote against the system.</a></li>
+      <li><a href="#">I Dont’t Have The Time To Vote.</a></li>
+      <li><a href="#">I Dont’t Have The Time To Vote.</a></li>
+      <li><a href="#">I Dont’t Have The Time To Vote.</a></li>
+     </ol>
+    </nav>
+
     <article class="excuse" data-excuse="1">
      <a name="excuse_1"></a>
 
-     <h2>Reason No. 1</h2>
-     <h1>Voting is Hard</h1>
+     <h3>Reason No. 1</h3>
+     <h1>I dont’t have the time to vote.</h1>
 
      <section class="video">
-      <object width="640" height="360"><param name="movie" value="http://www.youtube.com/v/2amSQyhP0Mg?version=3&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/2amSQyhP0Mg?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="640" height="360" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+      <iframe width="640" height="360" src="http://www.youtube.com/embed/2amSQyhP0Mg" frameborder="0" allowfullscreen></iframe>
      </section>
 
      <aside class="social_buttons">
-      <h2>Friends using this excuse? Tell them it sucks.</h2>
+      <h2 class="tighter">Friends using this excuse? Tell them it sucks.</h2>
       <ul class="c">
        <li class="facebook">
         <a class="facebook_share" onclick="var fbt = window.screen.height/2-(318), fbl = window.screen.width/2-(313);window.open(this.href,'sharer','toolbar=0,status=0,width=626,height=356,top='+fbt+',left='+fbl);return false;" href="http://www.facebook.com/sharer.php?u=[URL ENCODED]&amp;t=[TITLE ENCODED]">
@@ -95,7 +108,42 @@
      </aside>
 
      <section class="description">
-      <h2>More Smackdowns:</h2>
+      <h2 class="tighter">More Smackdowns:</h2>
+      <p>Praesent lectus nunc, dapibus at tempor placerat, suscipit et mi. Aliquam porttitor, purus at accumsan fermentum, purus ipsum tempus nunc, non rutrum augue erat a leo. Suspendisse in fermentum elit.</p>
+      <p>Praesent lectus nunc, dapibus at tempor placerat, suscipit et mi. Aliquam porttitor, purus at accumsan fermentum, purus ipsum tempus nunc, non rutrum augue erat a leo. Suspendisse in fermentum elit.</p>
+     </section>
+    </article>
+
+    <article class="excuse" data-excuse="2">
+     <a name="excuse_2"></a>
+
+     <h3>Reason No. 2</h3>
+     <h1>Voting is too complicated.</h1>
+
+     <section class="video">
+      <iframe width="640" height="360" src="http://www.youtube.com/embed/2amSQyhP0Mg" frameborder="0" allowfullscreen></iframe>
+     </section>
+
+     <aside class="social_buttons">
+      <h2 class="tighter">Friends using this excuse? Tell them it sucks.</h2>
+      <ul class="c">
+       <li class="facebook">
+        <a class="facebook_share" onclick="var fbt = window.screen.height/2-(318), fbl = window.screen.width/2-(313);window.open(this.href,'sharer','toolbar=0,status=0,width=626,height=356,top='+fbt+',left='+fbl);return false;" href="http://www.facebook.com/sharer.php?u=[URL ENCODED]&amp;t=[TITLE ENCODED]">
+         <i class="icon facebook_share"></i>
+         <span>Share</span>
+        </a>
+       </li>
+       <li class="twitter">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://yourexcusesucks.com" data-text="tweet text" data-size="large" data-related="yourexcusesucks" data-hashtags="YourExcuseSucks">Tweet</a>
+       </li>
+       <li class="email">
+        email?
+       </li>
+      </ul>
+     </aside>
+
+     <section class="description">
+      <h2 class="tighter">More Smackdowns:</h2>
       <p>Praesent lectus nunc, dapibus at tempor placerat, suscipit et mi. Aliquam porttitor, purus at accumsan fermentum, purus ipsum tempus nunc, non rutrum augue erat a leo. Suspendisse in fermentum elit.</p>
       <p>Praesent lectus nunc, dapibus at tempor placerat, suscipit et mi. Aliquam porttitor, purus at accumsan fermentum, purus ipsum tempus nunc, non rutrum augue erat a leo. Suspendisse in fermentum elit.</p>
      </section>
@@ -105,15 +153,21 @@
 
    <section id="sidebar" class="r">
     <div class="box">
-     <h2>About</h2>
+     <h3>About</h3>
      <p>Quisque sed metus justo. Sed malesuada tortor eu libero sollicitudin aliquam. Phasellus pulvinar massa non libero posuere dignissim.</p>
     </div>
 
-    <div class="box" id="sidebar_go_vote">Go Vote.</div>
+    <div class="box" id="sidebar_go_vote">
+     <h4>
+      <a href="#">Go <span class="red">Vote.</span></a>
+     </h4>
+    </div>
 
     <div class="box">
-     <h2>Twitter Feed</h2>
-     <p>[widget goes here]</p>
+     <h3>Twitter Feed</h3>
+     <div id="twitter_widget">
+      <a class="twitter-timeline" href="https://twitter.com/search?q=%23YourExcuseSucks" data-widget-id="264925721137389569">Tweets about "#YourExcuseSucks"</a>
+     </div>
     </div>
    </section>
   </div>
@@ -134,7 +188,6 @@
 
  <!-- TWITTER -->
  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
 </body>
 </html>
 
