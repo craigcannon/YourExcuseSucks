@@ -157,3 +157,42 @@ p {padding: 0 0 10px 0; margin: 0; color: rgba(88,88,90,1); font-size: 1.85em; l
 
 /* --- Mobile Structure ------------------------------------------------------- */
   /* ... TODO ... */
+
+
+/* Mobile layout, smartphone portrait & landscape, tablet portrait (tablet landscape renders normally) */
+@media handheld,only screen and (device-width: 320px) and (orientation: portrait), only screen and (device-width: 320px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait), only screen and (device-width: 320px) and (orientation: landscape), only screen and (device-width: 320px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape), only screen and (device-width: 768px) and (orientation: portrait), only screen and (device-width: 768px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+  body {font-size: 50%;}
+  h1 {font-size: 6.4em;}
+  .container {width: auto; margin: 0; padding: 0 5px;}
+  #topbar {margin: 0 0 12px 0;}
+  #header {padding: 30px 0 35px 0; margin: 0 0 48px; max-height: 64px;}
+  #header h1#logo {font-size: 8.2em;}
+  #header #logo_stamp {bottom: -62px; width: 58px; height: 56px;}
+  #header #logo_stamp i.icon {width: 58px; height: 56px; background-size: auto 125px;}
+  #content, #sidebar {clear: both; float: none; width: auto; padding: 0;}
+  #content #excuses_list ol li {font-size: 4.2em;}
+  #content .excuse .video iframe, #content .excuse .video embed, #content .excuse .video object {width: 100%; height: auto; min-height: 220px;}
+  #content .excuse h2 {line-height: 1.33em;}
+  #content .excuse h3 + h1 {padding-top: 5px;}
+  #sidebar {padding: 20px 0; margin: 20px 0 0 0; border-top: 3px solid rgba(0,116,150,1);}
+  #sidebar .box {padding: 0 0 10px 0;}
+  #sidebar #sidebar_go_vote {padding: 0 0 10px 0;}
+  #sidebar #twitter_search_widget {display: none;}
+  #footer #credits, #footer #info {clear: both; float: none;}
+  #footer #credits {padding: 0 0 20px 0;}
+}
+
+/* Mobile layout, landscape */
+@media only screen and (device-width: 320px) and (orientation: landscape), only screen and (device-width: 320px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+  body {font-size: 42%;}
+  #topbar {height: 8px; margin: 0 0 15px 0;}
+  #header {max-height: 54px;}
+}
+
+/* Mobile layout, tablets portrait */
+@media only screen and (device-width: 768px) and (orientation: portrait), only screen and (device-width: 768px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+  body {font-size: 62.5%;}
+  .container {padding: 0 15px;}
+  #header {max-height: 82px;}
+  #content .excuse .video iframe, #content .excuse .video embed, #content .excuse .video object {min-height: 320px;}
+}
