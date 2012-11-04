@@ -136,7 +136,9 @@ p, dd {padding: 0 0 10px 0; margin: 0; color: rgba(88,88,90,1); font-size: 1.85e
 #sidebar #sidebar_go_vote a:hover, #sidebar #sidebar_go_vote a:focus { color: rgba(255,255,255,1);}
 #sidebar #sidebar_go_vote a, #sidebar #sidebar_go_vote a span {-webkit-transition: color .1s ease-out;}
 #sidebar #sidebar_go_vote a:hover .white, #sidebar #sidebar_go_vote a:focus .white {color: rgba(238,49,45,1);}
-#sidebar dl dt {padding: 20px 0 3px 0;}
+#sidebar #full_credits {padding: 20px 0 0 0;}
+#sidebar dl dt {padding: 30px 0 3px 0;}
+#sidebar dl *:first-child {padding-top: 0;}
 #sidebar dl dd {padding: 5px 0 0 0; font-size: 1.4em;}
 #sidebar dl dd a {color: rgba(88,88,90,1);}
 #sidebar dl dd a:hover, #sidebar dl dd a:focus {color: rgba(238,49,45,1);}
