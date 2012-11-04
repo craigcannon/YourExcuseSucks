@@ -88,7 +88,7 @@ i.icon {background: url(../images/assets.png) 100px 100px no-repeat; text-indent
 i.icon.logo {width: px; height: px; background-position: 0 0;}
 i.icon.logo_stamp {width: 100px; height: 100px; background-color: rgba(231,232,233,1);}
 
-h1 {font-size: 8.2em; color: rgba(0,116,150,1); text-transform: uppercase; letter-spacing: -.02em; font-family: 'Conv_Knockout-26',Helvetica,Arial,sans-serif; font-weight: normal;}
+h1 {font-size: 8.2em; color: rgba(0,116,150,1); text-transform: uppercase; letter-spacing: .02em; font-family: 'Conv_Knockout-26',Helvetica,Arial,sans-serif; font-weight: normal;}
 h2 {font-size: 1.2em; color: rgba(238,49,45,1); text-transform: uppercase; letter-spacing: .2em;}
 p {color: rgba(88,88,90,1); font-size: 1.6em; line-height: 1.4em; font-family: Times,'Times New Roman',serif;}
 
@@ -116,11 +116,14 @@ p {color: rgba(88,88,90,1); font-size: 1.6em; line-height: 1.4em; font-family: T
 
 /* --- Web Structure ---------------------------------------------------------- */
 
-.container {width: 900px; margin: 0 auto;}
+.container {width: 940px; margin: 0 auto;}
 #wrapper {}
 #topbar {height: 12px; margin: 0 0 25px 0;}
-#header {padding: 108px 0 114px 0; margin: 0 0 84px 0;}
-#header #logo {}
+#header {padding: 90px 0 85px 0; margin: 0 0 84px 0;}
+#header h1#logo {max-height: 166px; overflow: hidden; text-align: center; font-size: 16.6em; color: rgba(255,255,255,1); line-height: 1.0em; vertical-align: top;}
+#header h1#logo a {color: rgba(255,255,255,1);}
+#header h1#logo a:hover, #header h1#logo a:focus {color: rgba(238,49,45,1);}
+#header h1#logo .red {color: rgba(238,49,45,1);}
 #header #logo_stamp {bottom: -152px; left: 0; right: 0; margin: 0 auto; width: 100px; height: 100px;}
 #content {width: 640px; min-height: 600px; padding: 0 0 30px 0;}
 #sidebar {width: 240px;}
