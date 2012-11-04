@@ -1,0 +1,123 @@
+/*
+  Your Excuse Sucks
+  http://www.yourexcuse.org
+  -----------------------------------------------------------------------------
+
+  If you are reading this, go vote if you haven't already!
+
+
+  -----------------------------------------------------------------------------
+
+  Color scheme:
+    Black:    0,0,0,1
+    Blue:     0,116,150,1
+    Red:      238,49,45,1
+    Grey:     88,88,90,1
+    Lt Grey:  231,232,233,1
+    White:    255,255,255,1
+
+*/
+
+/* --- CSS Reset -------------------------------------------------------------- */
+html, body, header, hgroup, nav, article, section, details, aside, footer, figure, figcaption, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+header, hgroup, nav, article, section, details, aside, footer {display: block;}
+param {display: none;}
+html, body {height: 100%;}
+html * {text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased;}
+body {line-height: 1.0em; font-size: 62.5%; margin: 0; padding: 0; background: rgba(255,255,255,1);}
+
+
+/* --- Global Styles ---------------------------------------------------------- */
+body {background: rgba(255,255,255,1);}
+body ::selection {background: rgba(231,232,233,1); color: rgba(238,49,45,1);}
+dl dt {font-weight: bold;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;}
+:focus {outline: 0;}
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+table {border-collapse: collapse; border-spacing: 0; font-size: 1.0em;}
+thead, tbody, tr, th, td {font-size: 1.0em; line-height: 1.0em;}
+body, h1, h2, h3, h4, h5, h6, input, select, textarea, button {font-family: Arial, Helvetica, Verdana, sans-serif; line-height: 1.2em;}
+h1, h2, h3, h4, h5, h6, input, select, textarea, p, blockquote, li, dt, dd {letter-spacing: 0;}
+p, blockquote, li, dt, dd {font-size: 1.3em; font-family: Arial, Helvetica, Verdana, sans-serif; color: rgba(88,88,90,1); line-height: 1.25em;}
+code {display: block; font-size: 1.3em; color: rgba(88,88,90,1); line-height: 1.25em;}
+blockquote p, blockquote blockquote, li li, p code {font-size: 1.0em;}
+dt {font-weight: bold;}
+
+a {color: rgba(0,116,150,1); text-decoration: none;}
+a:focus, a:hover {color: rgba(238,49,45,1);}
+
+h1 {font-size: 2.8em;}
+h2 {font-size: 2.4em;}
+h3 {font-size: 2.2em;}
+h4 {font-size: 2.0em;}
+h5 {font-size: 1.8em;}
+h6 {font-size: 1.6em;}
+
+
+/* --- Useful Snippets -------------------------------------------------------- */
+.l {clear: none; float: left;}
+.r {clear: none; float: right;}
+.c {clear: both; float: none;}
+.c:after {content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.hide {display: none;}
+.rel {position: relative;}
+.abs {position: absolute; z-index: 2;}
+.b {font-weight: bold;}
+.nb {font-weight: normal;}
+.i {font-style: italic;}
+.tl {text-align: left;}
+.tr {text-align: right;}
+.tc {text-align: center;}
+.to {text-overflow: ellipsis; overflow-x: hidden; -ms-text-overflow: ellipsis;}
+.to.nw {white-space: nowrap; overflow-x: auto; overflow: hidden;}
+
+i.icon {display: inline-block; font-style: normal;}
+
+
+
+/* --- Styling ---------------------------------------------------------------- */
+
+i.icon {background: url(../images/assets.png) 100px 100px no-repeat; text-indent: -9999px;}
+i.icon.logo {width: px; height: px; background-position: 0 0;}
+i.icon.logo_stamp {width: 100px; height: 100px; background-color: rgba(231,232,233,1);}
+
+h1 {font-size: 4.2em; color: rgba(0,116,150,1); text-transform: uppercase; letter-spacing: -.05em;}
+h2 {font-size: 1.2em; color: rgba(238,49,45,1); text-transform: uppercase; letter-spacing: .2em;}
+p {color: rgba(88,88,90,1); font-size: 1.6em; line-height: 1.4em; font-family: Times,'Times New Roman',serif;}
+
+#topbar {background: rgba(231,232,233,1);}
+#header {background: rgba(0,116,150,1);}
+
+#content .excuse {padding: 0 0 20px 0; margin: 0 0 20px 0; border-bottom: 3px solid rgba(0,116,150,1);}
+#content .excuse .video {margin: 10px 0;}
+#content .excuse .social_buttons {margin: 10px 0;}
+#content .excuse .description {margin: 10px 0;}
+
+#sidebar .box {padding: 0 0 20px 0;}
+#sidebar .box h2 {padding: 0 0 12px 0;}
+
+#footer {background: rgba(88,88,90,1);}
+
+
+/* HiDPI tweaks */
+  /* ... TODO ... */
+
+
+/* --- Web Structure ---------------------------------------------------------- */
+
+.container {width: 900px; margin: 0 auto;}
+#wrapper {}
+#topbar {height: 12px; margin: 0 0 25px 0;}
+#header {padding: 108px 0 114px 0; margin: 0 0 84px 0;}
+#header #logo {}
+#header #logo_stamp {bottom: -152px; left: 0; right: 0; margin: 0 auto; width: 100px; height: 100px;}
+#content {width: 640px; min-height: 600px; padding: 0 0 30px 0;}
+#sidebar {width: 240px;}
+#footer {min-height: 200px;}
+
+
+/* --- Mobile Structure ------------------------------------------------------- */
+  /* ... TODO ... */
