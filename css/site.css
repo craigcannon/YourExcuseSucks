@@ -33,7 +33,7 @@ body {line-height: 1.0em; font-size: 62.5%; margin: 0; padding: 0; background: r
 
 /* --- Global Styles ---------------------------------------------------------- */
 body {background: rgba(255,255,255,1);}
-body ::selection {background: rgba(231,232,233,1); color: rgba(238,49,45,1);}
+body ::selection {background: rgba(0,116,150,.08);}
 dl dt {font-weight: bold;}
 ol, ul {list-style: none;}
 blockquote, q {quotes: none;}
@@ -88,9 +88,11 @@ i.icon {display: inline-block; font-style: normal;}
 
 /* --- Styling ---------------------------------------------------------------- */
 
-i.icon {background: url(../images/assets.png) 100px 100px no-repeat; text-indent: -9999px;}
+i.icon {background: url(../images/assets.png?2) 100px 100px no-repeat; text-indent: -9999px;}
 /*i.icon.logo {width: px; height: px; background-position: 0 0;}*/
 i.icon.logo_stamp {width: 116px; height: 112px; background-position: 0 0;}
+i.icon.footer.cultivatedwit {width: 42px; height: 24px; background-position: 0 -136px;}
+i.icon.footer.fordfoundation {width: 160px; height: 24px; background-position: 0 -112px;}
 
 h1 {padding: 0; margin: 0; font-size: 9.2em; line-height: 1.0em; color: rgba(0,116,150,1); text-transform: uppercase; letter-spacing: .02em; font-family: 'Conv_Knockout-26',Helvetica,Arial,sans-serif; font-weight: normal;}
 h2 {padding: 0; margin: 0; font-size: 1.6em; line-height: 1.0em; color: rgba(238,49,45,1); text-transform: uppercase; letter-spacing: .1em; font-family: 'proxima-nova',Helvetica,Arial,sans-serif; font-weight: 600;}
@@ -124,7 +126,14 @@ p {padding: 0 0 10px 0; margin: 0; color: rgba(88,88,90,1); font-size: 1.85em; l
 #sidebar .box h3 {padding: 0 0 12px 0;}
 #sidebar #sidebar_go_vote {padding: 0 0 35px 0;}
 
-#footer {background: rgba(88,88,90,1);}
+#footer {background: rgba(88,88,90,1); color: rgba(255,255,255,.64);}
+#footer h2, #footer p {color: rgba(255,255,255,.64);}
+#footer #credits h2 {font-size: 1.4em;}
+#footer #credits p {padding: 5px 0 0 0; line-height: 1.2em;}
+#footer #credits p a {vertical-align: middle;}
+#footer #credits p a i.icon {opacity: .64;}
+#footer #credits p a:hover i.icon {opacity: 1;}
+#footer #credits p span {padding: 0 5px; color: rgba(255,255,255,.36); vertical-align: middle;}
 
 
 /* HiDPI tweaks */
@@ -143,7 +152,7 @@ p {padding: 0 0 10px 0; margin: 0; color: rgba(88,88,90,1); font-size: 1.85em; l
 #header #logo_stamp {bottom: -133px; left: 0; right: 0; margin: 0 auto; width: 116px; height: 112px;}
 #content {width: 640px; min-height: 600px; padding: 0 0 80px 0;}
 #sidebar {width: 240px;}
-#footer {min-height: 200px;}
+#footer {padding: 30px 0;}
 
 
 /* --- Mobile Structure ------------------------------------------------------- */
