@@ -109,7 +109,9 @@ p {padding: 0 0 10px 0; margin: 0; color: rgba(88,88,90,1); font-size: 1.85em; l
 #content #excuses_list ol {counter-reset: li; list-style: none; margin: 10px 0 0 0; padding: 0;}
 #content #excuses_list ol li {margin: 0 0 10px 0; font-size: 6.4em;}
 #content #excuses_list ol > li:before {content: counter(li); counter-increment: li; width: 55px; text-align: right; padding: 0 12px 0 0; color: rgba(238,49,45,1);}
-#content .excuse {padding: 30px 0 0 0; margin: 20px 0 0 0; border-top: 3px solid rgba(0,116,150,1);}
+
+#content .excuse {padding: 15px 0 0 0; margin: 20px 0 0 0; border-top: 3px solid rgba(0,116,150,1);}
+#content .excuse h3 {padding-top: 15px;}
 #content .excuse .video {margin: 10px 0;}
 #content .excuse .social_buttons {margin: 20px 0 10px 0;}
 #content .excuse .description {margin: 30px 0 10px 0;}

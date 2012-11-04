@@ -27,6 +27,7 @@
  <meta name="twitter:image" content="" />
 
  <script type="text/javascript" src="/js/jquery-1.8.2.min.js" charset="utf-8"></script>
+ <script type="text/javascript" src="/js/jquery.scrollto.min.js" charset="utf-8"></script>
  <script type="text/javascript" src="/js/site.js" charset="utf-8"></script>
  <!--[if lt IE 9]>
   <script src="/html5shiv.js"></script>
@@ -69,18 +70,18 @@
     <nav id="excuses_list">
      <h3>The Excuses</h3>
      <ol>
-      <li><a href="#">I dont’t have the time to vote.</a></li>
-      <li><a href="#">Voting is too complicated.</a></li>
-      <li><a href="#">My vote doesn’t matter in my state.</a></li>
-      <li><a href="#">My not voting is a vote against the system.</a></li>
-      <li><a href="#">I Dont’t Have The Time To Vote.</a></li>
-      <li><a href="#">I Dont’t Have The Time To Vote.</a></li>
-      <li><a href="#">I Dont’t Have The Time To Vote.</a></li>
+      <li><a href="/excuse/i-dont-have-time-to-vote" data-excuse="1">I dont’t have the time to vote.</a></li>
+      <li><a href="/excuse/voting-is-too-complicated" data-excuse="2">Voting is too complicated.</a></li>
+      <li><a href="#" data-excuse="3">My vote doesn’t matter in my state.</a></li>
+      <li><a href="#" data-excuse="4">My not voting is a vote against the system.</a></li>
+      <li><a href="#" data-excuse="5">I Dont’t Have The Time To Vote.</a></li>
+      <li><a href="#" data-excuse="6">I Dont’t Have The Time To Vote.</a></li>
+      <li><a href="#" data-excuse="7">I Dont’t Have The Time To Vote.</a></li>
      </ol>
     </nav>
 
-    <article class="excuse" data-excuse="1">
-     <a name="excuse_1"></a>
+    <article class="excuse">
+     <a class="anchor" data-excuse="1" name="!/excuse/i-dont-have-time-to-vote"></a>
 
      <h3>Reason No. 1</h3>
      <h1>I dont’t have the time to vote.</h1>
@@ -93,7 +94,7 @@
       <h2 class="tighter">Friends using this excuse? Tell them it sucks.</h2>
       <ul class="c">
        <li class="facebook">
-        <a class="facebook_share" onclick="var fbt = window.screen.height/2-(318), fbl = window.screen.width/2-(313);window.open(this.href,'sharer','toolbar=0,status=0,width=626,height=356,top='+fbt+',left='+fbl);return false;" href="http://www.facebook.com/sharer.php?u=[URL ENCODED]&amp;t=[TITLE ENCODED]">
+        <a class="facebook_share" onclick="var fbt = window.screen.height/2-(318), fbl = window.screen.width/2-(313);window.open(this.href,'sharer','toolbar=0,status=0,width=626,height=356,top='+fbt+',left='+fbl);return false;" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fyourexcusesucks.com%2Fexcuse%2Fi-dont-have-time-to-vote&amp;t=I%20dont%E2%80%99t%20have%20the%20time%20to%20vote.">
          <i class="icon facebook_share"></i>
          <span>Share</span>
         </a>
@@ -114,8 +115,8 @@
      </section>
     </article>
 
-    <article class="excuse" data-excuse="2">
-     <a name="excuse_2"></a>
+    <article class="excuse">
+     <a class="anchor" data-excuse="2" name="!/excuse/voting-is-too-complicated"></a>
 
      <h3>Reason No. 2</h3>
      <h1>Voting is too complicated.</h1>
