@@ -97,9 +97,10 @@ i.icon.facebook_share {width: 28px; height: 26px; background-position: -117px 0;
 
 h1 {padding: 0; margin: 0; font-size: 9.2em; line-height: 1.0em; color: rgba(0,116,150,1); text-transform: uppercase; letter-spacing: .02em; font-family: 'Conv_Knockout-26',Helvetica,Arial,sans-serif; font-weight: normal;}
 h2 {padding: 0; margin: 0; font-size: 1.6em; line-height: 1.0em; color: rgba(238,49,45,1); text-transform: uppercase; letter-spacing: .1em; font-family: 'proxima-nova',Helvetica,Arial,sans-serif; font-weight: 600;}
-h3 {padding: 0; margin: 0; font-size: 1.4em; line-height: 1.0em; color: rgba(238,49,45,1); text-transform: uppercase; letter-spacing: .5em; font-family: 'proxima-nova',Helvetica,Arial,sans-serif; font-weight: 600;}
+h3, dt {padding: 0; margin: 0; font-size: 1.4em; line-height: 1.0em; color: rgba(238,49,45,1); text-transform: uppercase; letter-spacing: .5em; font-family: 'proxima-nova',Helvetica,Arial,sans-serif; font-weight: 600;}
 h4, #content #excuses_list ol li {padding: 0; margin: 0; font-size: 8.8em; line-height: 1.0em; color: rgba(0,116,150,1); text-transform: uppercase; letter-spacing: .02em; font-family: 'Conv_Knockout-26',Helvetica,Arial,sans-serif; font-weight: normal;}
-p {padding: 0 0 10px 0; margin: 0; color: rgba(88,88,90,1); font-size: 1.85em; line-height: 1.75em; font-family: 'rooney-web', Times,'Times New Roman',serif;}
+dt {letter-spacing: .25em;}
+p, dd {padding: 0 0 10px 0; margin: 0; color: rgba(88,88,90,1); font-size: 1.85em; line-height: 1.75em; font-family: 'rooney-web', Times,'Times New Roman',serif;}
 
 #topbar {background: rgba(231,232,233,1);}
 #header {background: rgba(0,116,150,1);}
@@ -129,7 +130,16 @@ p {padding: 0 0 10px 0; margin: 0; color: rgba(88,88,90,1); font-size: 1.85em; l
 
 #sidebar .box {padding: 0 0 20px 0;}
 #sidebar .box h3 {padding: 0 0 12px 0;}
-#sidebar #sidebar_go_vote {padding: 0 0 35px 0;}
+#sidebar #sidebar_go_vote {padding: 0 0 40px 0;}
+#sidebar #sidebar_go_vote h4 {font-size: 6.4em; line-height: .85em;}
+#sidebar #sidebar_go_vote a {display: inline-block; padding: 10px 15px; margin: -0; background-color: rgba(231,232,233,1); text-align: center;}
+#sidebar #sidebar_go_vote a:hover, #sidebar #sidebar_go_vote a:focus { color: rgba(255,255,255,1);}
+#sidebar #sidebar_go_vote a, #sidebar #sidebar_go_vote a span {-webkit-transition: color .1s ease-out;}
+#sidebar #sidebar_go_vote a:hover .white, #sidebar #sidebar_go_vote a:focus .white {color: rgba(238,49,45,1);}
+#sidebar dl dt {padding: 20px 0 3px 0;}
+#sidebar dl dd {padding: 5px 0 0 0; font-size: 1.4em;}
+#sidebar dl dd a {color: rgba(88,88,90,1);}
+#sidebar dl dd a:hover, #sidebar dl dd a:focus {color: rgba(238,49,45,1);}
 
 #footer {background: rgba(88,88,90,1); color: rgba(255,255,255,.64);}
 #footer h2, #footer p {color: rgba(255,255,255,.64);}
@@ -168,7 +178,7 @@ p {padding: 0 0 10px 0; margin: 0; color: rgba(88,88,90,1); font-size: 1.85em; l
 @media handheld,only screen and (device-width: 320px) and (orientation: portrait), only screen and (device-width: 320px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait), only screen and (device-width: 320px) and (orientation: landscape), only screen and (device-width: 320px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape), only screen and (device-width: 768px) and (orientation: portrait), only screen and (device-width: 768px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
   body {font-size: 50%;}
   h1 {font-size: 6.4em;}
-  .container {width: auto; margin: 0; padding: 0 5px;}
+  .container {width: auto; margin: 0; padding: 0 10px;}
   #topbar {margin: 0 0 12px 0;}
   #header {padding: 30px 0 35px 0; margin: 0 0 48px; max-height: 64px;}
   #header h1#logo {font-size: 8.2em;}
@@ -183,7 +193,7 @@ p {padding: 0 0 10px 0; margin: 0; color: rgba(88,88,90,1); font-size: 1.85em; l
   .social_buttons ul li a.facebook_share span {padding-top: 6px;}
   #sidebar {padding: 20px 0; margin: 20px 0 0 0; border-top: 3px solid rgba(0,116,150,1);}
   #sidebar .box {padding: 0 0 10px 0;}
-  #sidebar #sidebar_go_vote {padding: 0 0 10px 0;}
+  #sidebar #sidebar_go_vote {padding: 0 0 10px 0; text-align: center;}
   #sidebar #twitter_search_widget {display: none;}
   #footer #credits, #footer #info {clear: both; float: none;}
   #footer #credits {padding: 0 0 20px 0;}
