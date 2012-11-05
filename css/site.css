@@ -80,6 +80,7 @@ h6 {font-size: 1.6em;}
 
 .red {color: rgba(238,49,45,1);}
 .white {color: rgba(255,255,255,1);}
+.grey {color: rgba(88,88,90,1);}
 .blue {color: rgba(0,116,150,1);}
 
 i.icon {display: inline-block; font-style: normal;}
@@ -120,6 +121,14 @@ p, dd {padding: 0 0 10px 0; margin: 0; color: rgba(88,88,90,1); font-size: 1.85e
 #content .excuse .social_buttons {padding: 10px 0 20px 0;}
 #content .excuse .description {padding: 10px 0;}
 
+#content #valid_excuses {padding-top: 30px;}
+#content #valid_excuses h2 {font-size: 2.0em; line-height: 1.2em;}
+#content #valid_excuses ul {list-style: square; margin: 0 0 0 25px; padding: 5px 0 0 0;}
+#content #valid_excuses ul li {font-size: 1.6em; padding: 2px 0 2px 5px; margin: 0;}
+#content #valid_excuses ul li p {font-size: 1.0em; padding: 0;}
+#content #valid_excuses ul li p a {color: rgba(238,49,45,1);}
+#content #valid_excuses ul li p a:hover, #content #valid_excuses ul li p a:focus {color: rgba(0,116,150,1);}
+
 .social_buttons ul {margin: 10px 0 0 0; padding: 0; list-style: none;}
 .social_buttons ul li {clear: none; float: left; padding: 0 0 0 35px;}
 .social_buttons ul li:first-child {padding: 0;}
@@ -134,8 +143,8 @@ p, dd {padding: 0 0 10px 0; margin: 0; color: rgba(88,88,90,1); font-size: 1.85e
 #sidebar #sidebar_go_vote h4 {font-size: 6.4em; line-height: .85em;}
 #sidebar #sidebar_go_vote a {display: inline-block; padding: 10px 15px; margin: -0; background-color: rgba(231,232,233,1); text-align: center;}
 #sidebar #sidebar_go_vote a:hover, #sidebar #sidebar_go_vote a:focus { color: rgba(255,255,255,1);}
-#sidebar #sidebar_go_vote a, #sidebar #sidebar_go_vote a span {-webkit-transition: color .1s ease-out;}
-#sidebar #sidebar_go_vote a:hover .white, #sidebar #sidebar_go_vote a:focus .white {color: rgba(238,49,45,1);}
+/*#sidebar #sidebar_go_vote a, #sidebar #sidebar_go_vote a span {-webkit-transition: color .1s ease-out;}*/
+#sidebar #sidebar_go_vote a:hover span, #sidebar #sidebar_go_vote a:focus span {color: rgba(238,49,45,1);}
 #sidebar #full_credits {padding: 20px 0 0 0;}
 #sidebar dl dt {padding: 30px 0 3px 0;}
 #sidebar dl *:first-child {padding-top: 0;}
