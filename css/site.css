@@ -136,6 +136,7 @@ p, dd {padding: 0 0 10px 0; margin: 0; color: rgba(88,88,90,1); font-size: 1.85e
 .social_buttons ul li a.facebook_share:hover, .social_buttons ul li a.facebook_share:focus {background-color: rgba(31,65,137,1); background-color: rgba(31,65,137,1); background-image: none; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(60,90,151,1)), to(rgba(31,65,137,1))); background-image: -moz-linear-gradient(center bottom, rgb(60,90,151) 100%, rgb(31,65,137) 0%);}
 .social_buttons ul li a.facebook_share i.icon {clear: none; float: left; border-right: 1px solid rgba(255,255,255,.18);}
 .social_buttons ul li a.facebook_share span {display: inline-block; padding: 5px 8px 0 8px; height: 100%; vertical-align: top; border-left: 1px solid rgba(0,0,0,.08); font-family: 'Helvetica Neue', Arial, sans-serif; letter-spacing: 0;}
+.social_buttons ul li.gplus {padding-top: 1px;}
 
 #sidebar .box {padding: 0 0 20px 0;}
 #sidebar .box h3 {padding: 0 0 12px 0;}
