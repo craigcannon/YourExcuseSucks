@@ -130,12 +130,12 @@ p, dd {padding: 0 0 10px 0; margin: 0; color: rgba(88,88,90,1); font-size: 1.85e
 #content #valid_excuses ul li p a:hover, #content #valid_excuses ul li p a:focus {color: rgba(0,116,150,1);}
 
 .social_buttons ul {margin: 10px 0 0 0; padding: 0; list-style: none;}
-.social_buttons ul li {clear: none; float: left; padding: 0 0 0 35px;}
+.social_buttons ul li {clear: none; float: left; padding: 0 0 0 20px;}
 .social_buttons ul li:first-child {padding: 0;}
-.social_buttons ul li a.facebook_share {font-size: 1.15em; display: inline-block; height: 26px; overflow: hidden; border: 1px solid rgba(204,204,204,1); border-radius: 4px; color: rgba(255,255,255,1); font-weight: bold; text-shadow: 0 1px 0 rgba(0,0,0,.15); background-color: rgba(60,90,151,1); background-image: none; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(70,100,161,1)), to(rgba(60,90,151,1))); background-image: -moz-linear-gradient(center bottom, rgb(70,100,161) 100%, rgb(60,90,151) 0%);}
+.social_buttons ul li a.facebook_share {font-size: 1.1em; display: inline-block; height: 26px; overflow: hidden; border: 1px solid rgba(204,204,204,1); border-radius: 4px; color: rgba(255,255,255,1); font-weight: bold; text-shadow: 0 1px 0 rgba(0,0,0,.23); background-color: rgba(60,90,151,1); background-image: none; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(80,110,151,1)), to(rgba(50,80,141,1))); background-image: -moz-linear-gradient(center bottom, rgb(80,110,151) 100%, rgb(50,0,141) 0%);}
 .social_buttons ul li a.facebook_share:hover, .social_buttons ul li a.facebook_share:focus {background-color: rgba(31,65,137,1); background-color: rgba(31,65,137,1); background-image: none; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(60,90,151,1)), to(rgba(31,65,137,1))); background-image: -moz-linear-gradient(center bottom, rgb(60,90,151) 100%, rgb(31,65,137) 0%);}
-.social_buttons ul li a.facebook_share i.icon {clear: none; float: left; border-right: 1px solid rgba(255,255,255,.24);}
-.social_buttons ul li a.facebook_share span {display: inline-block; padding: 5px 8px 0 10px; height: 100%; vertical-align: top; border-left: 1px solid rgba(0,0,0,.08);}
+.social_buttons ul li a.facebook_share i.icon {clear: none; float: left; border-right: 1px solid rgba(255,255,255,.18);}
+.social_buttons ul li a.facebook_share span {display: inline-block; padding: 5px 8px 0 8px; height: 100%; vertical-align: top; border-left: 1px solid rgba(0,0,0,.08); font-family: 'Helvetica Neue', Arial, sans-serif; letter-spacing: 0;}
 
 #sidebar .box {padding: 0 0 20px 0;}
 #sidebar .box h3 {padding: 0 0 12px 0;}
@@ -195,9 +195,12 @@ p, dd {padding: 0 0 10px 0; margin: 0; color: rgba(88,88,90,1); font-size: 1.85e
   #header #logo_stamp i.icon {width: 58px; height: 56px; background-size: auto 125px;}
   #content, #sidebar {clear: both; float: none; width: auto; padding: 0;}
   #content #excuses_list ol li {font-size: 4.2em;}
+  #content .excuse {padding-bottom: 0;}
   #content .excuse .video iframe, #content .excuse .video embed, #content .excuse .video object {width: 100%; height: auto; min-height: 220px;}
   #content .excuse h2 {line-height: 1.33em;}
   #content .excuse h3 + h1 {padding-top: 5px;}
+  .social_buttons ul li {clear: both; float: none; padding: 10px 0 0 0 !important; height: 28px;}
+  .social_buttons ul li:first-child {padding: 0 !important;}
   .social_buttons ul li a.facebook_share {font-size: 1.3em;}
   .social_buttons ul li a.facebook_share span {padding-top: 6px;}
   #sidebar {padding: 20px 0; margin: 20px 0 0 0; border-top: 3px solid rgba(0,116,150,1);}
