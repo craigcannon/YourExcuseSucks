@@ -152,7 +152,7 @@ p, dd {padding: 0 0 10px 0; margin: 0; color: rgba(88,88,90,1); font-size: 1.85e
 /*#sidebar #sidebar_go_vote a, #sidebar #sidebar_go_vote a span {-webkit-transition: color .1s ease-out;}*/
 #sidebar #sidebar_go_vote a:hover span, #sidebar #sidebar_go_vote a:focus span {color: rgba(238,49,45,1);}
 #sidebar #full_credits {padding: 20px 0 0 0;}
-#sidebar #general_share ul li {height: 26px; padding: 0 0 15px 15px; overflow: hidden;}
+#sidebar #general_share ul li {height: 26px; padding: 0 0 15px 15px;}
 #sidebar #general_share ul li.twitter, #sidebar #general_share ul li.facebook {clear: both; padding: 0 0 15px 0;}
 #sidebar #general_share ul li.facebook_like {padding-top: 5px; height: 21px;}
 #sidebar #general_share ul li.twitter {padding-top: 2px; height: 24px;}
